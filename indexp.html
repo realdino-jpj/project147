@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+<a-scene>
+
+    <a-entity position="0 0 10">
+        <a-camera></a-camera>
+    </a-entity>
+
+     <!--leg1-->
+     <a-entity>
+        <a-cylinder position="0 0 0" color="red" radius="0.5" height="1.5"></a-sphere>
+    </a-entity>
+
+    <!--leg2-->
+    <a-entity>
+        <a-cylinder position="2 0 0" color="red" radius="0.5" height="1.5"></a-sphere>
+    </a-entity>
+
+     <!--body-->
+     <a-entity>
+        <a-box position="0.9 2 0" color="blue" width="3.5" height="3"></a-box>
+    </a-entity>
+
+     <!--head-->
+     <a-entity>
+        <a-box position="0.9 4.5 0" color="cyan" width="2" height="2"></a-box>
+    </a-entity>
+
+    <!--eye1-->
+    <a-entity>
+        <a-sphere position="0.4 4.5 0" color="white" radius="0.6"></a-sphere>
+    </a-entity>
+
+     <!--eye2-->
+     <a-entity>
+        <a-sphere position="1.4 4.5 0" color="white" radius="0.6"></a-sphere>
+    </a-entity>
+
+     <!--pupil1-->
+     <a-entity>
+        <a-sphere position="1.4 4.5 0.5" color="black" radius="0.2" animation="property: position; from: 1.4 4.5 0.5; to: 1.4 4.6 0.5; dir: alternate; loop: true; dur: 1000;"></a-sphere>
+    </a-entity>
+
+    <!--pupil2-->
+    <a-entity>
+        <a-sphere position="0.4 4.5 0.5" color="black" radius="0.2" animation="property: position; from: 0.4 4.5 0.5; to: 0.4 4.6 0.5; dir: alternate; loop: true; dur: 1000;"></a-sphere>
+    </a-entity>
+
+
+</a-scene>
+</body>
+</html>
